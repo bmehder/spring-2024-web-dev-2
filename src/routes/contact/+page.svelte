@@ -12,6 +12,8 @@
 <h1>Contact</h1>
 
 <section class="flow">
+	<h2>Heading 2</h2>
+	
 	<p>
 		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita vel possimus
 		accusamus blanditiis consequatur commodi, rerum quidem dolorem dignissimos provident
@@ -86,7 +88,17 @@
 
 	input,
 	textarea {
-		padding: 0.5rem;
+		padding: 1rem;
 		font-family: inherit;
+	}
+	
+	button {
+		padding: 1rem;
+		font-size: inherit;
+		transition: scale 150ms;
+	}
+
+	button:hover {
+		scale: 0.99;
 	}
 </style>

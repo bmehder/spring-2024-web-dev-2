@@ -1,12 +1,21 @@
 <script>
+	import { page } from '$app/stores';
 	import '$lib/app.css'
 	import Header from '$lib/Header.svelte'
+	import Hero2 from '$lib/Hero2.svelte'
 	import Footer from '$lib/Footer.svelte'
 	import BackToTop from '$lib/BackToTop.svelte'
+
+	$: console.log($page)
+
 </script>
 
 <div class="wrapper">
 	<Header />
+
+	{#if $page.route.id === '/'}
+		<Hero2 />
+	{/if}
 
   <main class="container">
     <slot />

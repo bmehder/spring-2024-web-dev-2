@@ -3,13 +3,15 @@
 </script>
 
 <div class="card">
-	<a href="/blog/{post.slug}"
-		><img class="square" src={post.featured_image} alt={post.title} /></a
-	>
+	<a href="/blog/{post.slug}">
+		<img class="square" src={post.featured_image} alt={post.title} />
+	</a>
+
 	<div class="info">
-		<h2>{@html post.title}</h2>
+		<h2><a href="/blog/{post.slug}">{@html post.title}</a></h2>
 		<p>{@html post.excerpt}</p>
 	</div>
+
 	<a class="button" href="/blog/{post.slug}"> Read More </a>
 </div>
 
@@ -25,6 +27,10 @@
 		display: grid;
 		gap: 0.5rem;
 		padding: 1.5rem;
+	}
+
+	.info a {
+		color: initial;
 	}
 
 	.button {

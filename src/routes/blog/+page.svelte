@@ -2,7 +2,6 @@
 	import Post from '$lib/Post.svelte'
 
 	export let data
-	console.log(data.posts)
 </script>
 
 <h1>Blog</h1>

@@ -1,6 +1,10 @@
 <header>
 	<div class="container">
-		<div class="logo">Logo</div>
+		<div class="logo">
+			<a href="/">
+				<img src="/logo.svg" alt="Logo">
+			</a>
+		</div>
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
@@ -17,7 +21,7 @@
 		background-color: tomato;
 		color: white;
 	}
-	
+
 	.container {
 		display: flex;
 		justify-content: space-between;
@@ -26,8 +30,7 @@
 	}
 
 	.logo {
-		font-size: 3rem;
-		font-weight: bold;
+		padding-block: 1rem;
 	}
 
 	ul {

@@ -4,7 +4,7 @@
 
 <style>
 	footer {
-		padding-block: 1.5rem;
+		padding-block: 3rem;
 		background-color: black;
 		color: white;
 		text-align: center;

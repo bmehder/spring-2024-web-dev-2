@@ -1,3 +1,5 @@
-<h1>Home</h1>
+<script>
+	import Boxes from '$lib/Boxes.svelte'
+</script>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos ut recusandae, in necessitatibus vitae voluptate, deleniti porro accusantium similique deserunt sit delectus natus inventore nemo cum, beatae autem at. Similique eius sapiente quia minima mollitia, modi aspernatur quidem repellat, neque odit cumque laboriosam debitis. Voluptas laborum voluptatem perferendis quis sint asperiores a officiis cumque maiores atque! Est, nemo vitae numquam animi officiis, voluptatem quos pariatur nam placeat odit eius voluptate obcaecati debitis voluptates id! Magni nobis sint, laudantium molestiae dolorem a animi id? Labore, earum. Earum odit distinctio repellat illum? Voluptatibus quod deserunt, animi ab deleniti eum laborum sapiente.</p>
+<Boxes />
