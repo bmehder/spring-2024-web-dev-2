@@ -1,4 +1,5 @@
 <script>
+	let formElement
 	let firstName = ''
 	let lastName = ''
 	let email = ''
@@ -6,6 +7,7 @@
 
 	function handleSubmit() {
 		console.log(firstName, lastName, email, message)
+		formElement.reset()
 	}
 </script>
 
@@ -13,7 +15,7 @@
 
 <section class="flow">
 	<h2>Heading 2</h2>
-	
+
 	<p>
 		Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita vel possimus
 		accusamus blanditiis consequatur commodi, rerum quidem dolorem dignissimos provident
@@ -21,7 +23,7 @@
 		dignissimos earum architecto harum!
 	</p>
 
-	<form on:submit|preventDefault={handleSubmit}>
+	<form bind:this={formElement} on:submit|preventDefault={handleSubmit}>
 		<div>
 			<label for="first-name">First Name</label>
 			<input
@@ -30,7 +32,7 @@
 				name="first-name"
 				bind:value={firstName}
 				placeholder="Enter first name..."
-        required
+				required
 			/>
 		</div>
 
@@ -42,7 +44,7 @@
 				name="last-name"
 				bind:value={lastName}
 				placeholder="Enter last name..."
-        required
+				required
 			/>
 		</div>
 
@@ -54,7 +56,7 @@
 				name="email"
 				bind:value={email}
 				placeholder="Enter email address..."
-        required
+				required
 			/>
 		</div>
 
@@ -66,7 +68,7 @@
 				rows="10"
 				bind:value={message}
 				placeholder="Enter message..."
-        required
+				required
 			></textarea>
 		</div>
 
@@ -76,7 +78,7 @@
 
 <style>
 	form {
-    max-width: 32rem;
+		max-width: 32rem;
 		display: grid;
 		gap: 1.5rem;
 	}
@@ -91,7 +93,7 @@
 		padding: 1rem;
 		font-family: inherit;
 	}
-	
+
 	button {
 		padding: 1rem;
 		font-size: inherit;

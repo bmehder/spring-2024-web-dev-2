@@ -23,8 +23,6 @@
 		bottom: 2rem;
 		padding: 0;
 		line-height: 0;
-		background-color: var(--bg-color, var(--light));
-		color: var(--color, var(--accent));
     font-size: 2rem;
 		border-radius: 50%;
 		box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.24);
